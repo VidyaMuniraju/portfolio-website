@@ -66,7 +66,6 @@ li a:active {
   float: left;
   width: 250px;
   margin-right: 40px;
-  border-radius: 50%;
 }
 
 .page-footer {
@@ -219,7 +218,7 @@ button:focus,
 .page-header {
   display: flex;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .page-header__item {
@@ -231,15 +230,40 @@ button:focus,
   text-align: right;
 }
 
+
+.form-control {
+  margin: 15px;
+}
+
+#profile {
+  margin-bottom: 100px;
+}
+
+#contact {
+  margin: 100px 25px 25px 25px;
+  /* padding: 10px; */
+}
+
+#project-grid {
+  margin: 100px 25px 25px 25px;
+}
+
+#about {
+  margin: 350px 25px 25px 25px;
+}
+
 /* start grid fallback */
 .projects_item {
-  display: inline-block;
-  width: 33%;
+  display: block;
+  /* width: 80%; */
+  padding: 10px;
+  margin: 40px 10px 40px 10px;
+  text-align: justify;
 }
 
 /* end grid fallback */
 
-@supports (display: grid) {
+/* @supports (display: grid) {
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -286,4 +310,4 @@ button:focus,
   h1 {
     font-size: var(--font-size);
   }
-}
+} */

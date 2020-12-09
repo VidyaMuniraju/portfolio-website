@@ -10,13 +10,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --link-color: blue;
+  --a-color-hover: darkgray;
+  --a-active: #702811;
+  --button-bgcolor: #357b70;
+  --button-text-color: white;
+  --projects-item-color: lightgray;
+  --font-size: 20px;
+}
+
 body {
-  font-size: 20px;
+  font-size: var(--font-size);
   font-family: 'Raleway', sans-serif;
 }
 
 div a {
-  color: blue;
+  color: var(--link-color);
 }
 
 /* a:visited {
@@ -43,33 +53,29 @@ color: #506068 ;
 
 } */
 
-li a:hover {
-  /* No underlining when hovering over a link */
-  text-decoration: none;
-  color: darkgray;
-}
-
+li a:hover,
 a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
-  color: darkgray;
+  color: var(--a-color-hover);
 }
 
 li a:active {
   /* selected link */
-  color: #702811;
+  color: var(--a-active);
 }
 
 #info {
-  font-size: 20px;
-  margin-top: 100px;
+  font-size: var(--font-size);
+  /* margin-top: 100px; */
 }
 
 .profile__portrait {
-  float: left;
+  float: right;
   width: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
+  margin: 0px 100px 40px 40px;
+  position: absolute;
+  right: 0px;
 }
 
 .page-footer {
@@ -86,11 +92,19 @@ li a:active {
 
 .profile {
   max-width: 700px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  /* position: relative; */
 }
 
 .welcome_text {
   text-align: left;
+  margin: 100px 50px 50px 150px;
+  padding-top: 25px;
+}
+
+.welcome_text-p {
+  text-align: left;
+  margin: 25px 50px 50px 150px;
 }
 
 #vm-logo {
@@ -103,7 +117,7 @@ li a:active {
 }
 
 #contact-details {
-  font-size: 20px;
+  font-size: var(--font-size);
   margin-top: 100px;
 }
 
@@ -127,7 +141,7 @@ opacity: 0.8;
 } */
 
 #content {
-  font-size: 20px;
+  font-size: var(--font-size);
   margin-top: 100px;
 }
 
@@ -148,28 +162,17 @@ opacity: 0.8;
   text-align: center;
 }
 
-.button {
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  background-color: #357b70;
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  margin: 30px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
-  transition: 0.2s opacity;
+.btn {
+  margin: 15px;
 }
 
+.button,
 button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: #357b70;
-  color: white;
+  background-color: var(--button-bgcolor);
+  color: var(--button-text-color);
   text-decoration: none;
   padding: 10px;
   margin: 30px;
@@ -307,15 +310,49 @@ button:focus,
   text-align: right;
 }
 
+.form-control {
+  margin: 15px;
+}
+
+#profile {
+  margin-bottom: 100px;
+  padding: 10px;
+}
+
+#contact {
+  margin: 100px 25px 25px 25px;
+  padding: 10px;
+}
+
+#project-grid {
+  margin: 100px 25px 25px 25px;
+  padding: 20px;
+}
+
+#about {
+  margin: 350px 25px 25px 25px;
+  padding: 10px;
+}
+
+.meet-app {
+  width: 50%;
+  margin: 15px;
+  float: left;
+}
+
 /* start grid fallback */
 .projects_item {
-  display: inline-block;
-  width: 33%;
+  display: block;
+  /* width: 80%; */
+  padding: 10px;
+  margin: 40px 10px 40px 10px;
+  text-align: justify;
 }
+
 
 /* end grid fallback */
 
-@supports (display: grid) {
+/* @supports (display: grid) {
   .projects {
     display: -ms-grid;
     display: grid;
@@ -326,7 +363,7 @@ button:focus,
   }
 
   .projects_item {
-    background-color: lightgray;
+    background-color: var(--projects-item-color);
     width: auto;
     min-height: auto;
     margin: 0;
@@ -334,15 +371,15 @@ button:focus,
   }
 
   .projects_item:last-child {
-    -ms-grid-column: 3;
-    grid-column: 3 / 3;
+    -ms-grid-column: 1;
+    grid-column: 1 / 1;
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     grid-row: 1 / 3;
   }
-}
+} */
 
-@media all and (max-width: 500px) {
+/* @media all and (max-width: 500px) {
   .projects {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -367,6 +404,6 @@ button:focus,
   }
 
   h1 {
-    font-size: 20px;
+    font-size: var(--font-size);
   }
-}
+} */

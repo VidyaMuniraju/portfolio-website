@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vidya Muniraju Portfolio</title>
-  <link rel="icon" href="favicon.ico"/>
+  <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.production.css">
@@ -16,46 +20,181 @@
 <body>
 
   <header class="page-header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img src="img/logo-vidya-muniraju.jpg" alt="Logo of the website that consists of my initials i.e., VM"
+            id="vm-logo" class="page-header__item">
+        </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
 
-    <img src="img/logo-vidya-muniraju.jpg" alt="Logo of the website that consists of my initials i.e., VM" id="vm-logo" class="page-header__item">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">Bio</a>
+          </li>
 
-    <nav class="main-navigation page-header__item" >
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
 
-      <ul role="menubar" class="nav_list">
-
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="nav_list_item nav_list_item--active">Home</a>
-        </li>
-
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="nav_list_item">Bio</a>
-        </li>
-
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="nav_list_item">Contact</a>
-        </li>
-
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="nav_list_item">Projects</a>
-        </li>
-
-      </ul>
-
+          <li class="nav-item">
+            <a href="#project-grid" class="nav-link">Projects</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-
   </header>
 
-  <div id="info" class="profile">
+  <section id="profile">
+    <div id="info" class="profile">
+      <img src="img/vidya-muniraju.jpeg" class="profile__portrait" alt="Portrait of Vidya Muniraju">
+      <h1 class="welcome_text">Hello!</h1>
+      <p class="welcome_text-p">I am Vidya Muniraju.</p>
+    </div>
+  </section>
 
-    <img src="img/vidya-muniraju.jpeg" class="profile__portrait" alt="Portrait of Vidya Muniraju">
+  <section id="about">
+    <div id="content" class="about_text--align">
+      <h2 class="more-info"><span style="text-decoration: underline;">Get to know more about me.</span></h2>
+      <p class="more-info">
 
-    <h1 class="welcome_text">Hello Everyone!</h1>
+        I am a Full Stack Developer from Texas, United States.<br>
+        <br>
+        I enjoy developing simple interfaces or websites that everyone<br>
+        loves to use. Trying to consistently develop new and exciting projects, <br>
+        and release high quality products for a smooth experience. And also a major <br>
+        horror, mysteries, and a thriller addict!
+      </p>
+      <a href="https://github.com/VidyaMuniraju" class="btn btn-outline-dark" target="_blank">Check out my GitHub
+        profile</a>
+      <table id="skills-matrix" class="about_text--align">
+        <thead>
+          <tr>
+            <td>Skills</td>
+            <td>Level of Expertise</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>4</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-    <p class="welcome_text">My name is Vidya Muniraju. I am a <span>web</span> developer from Texas.</p>
+  <section id="contact">
+    <div id="contact-details" class="contact-form">
+      <h3><span style="text-decoration: underline;">Contact me!</span></h3>
 
-    <a href="work.html" class="welcome_text">Check out some of my projects</a>
+      <form action="#" method="post" id="contact-form">
+        <div class="mb-3">
+          <label class="form-label" for="contact-email">E-mail address: </label>
+          <input type="email" id="contact-email" class="form-control" required>
+        </div>
 
-  </div>
+        <div class="mb-3">
+          <label class="form-label" for="contact-telephone">Telephone number: </label>
+          <input type="tel" id="contact-telephone" class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="message-input">Enter your message: </label>
+          <textarea maxlength="240" id="message-input" class="form-control" required></textarea>
+        </div>
+
+        <button type="submit" name="submit-button" class=" btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="project-grid">
+
+    <h1>MY PROJECTS</h1>
+
+    <div class="projects">
+
+      <div class="projects_item">
+
+        <h2>Which Character Are You</h2>
+
+        <p>
+          Within this project, I was responsible for frontend development, which has been created using HTML and CSS.
+          The project itself is written using JS.
+        </p>
+
+        <a href="https://github.com/prafulsurve/Which-Character-Are-You" target="_blank">See project on GitHub</a>
+
+      </div>
+
+      <div class="projects_item">
+
+        <h2>Cellphone Death Match</h2>
+
+        <p>
+          This project compares the prices and specifications of two competitive phones to help you decide better.
+        </p>
+
+        <a href="https://github.com/jenniwazhere/CellphoneDeathMatch" target="_blank">See project on GitHub</a>
+
+      </div>
+
+
+      <div class="projects_item">
+
+        <h2>To Do Application</h2>
+
+        <p>
+          An application to include all your daily to-do activities. I was responsible for the frontend development and
+          has been achieved using Swift and Xcode.
+        </p>
+
+        <a href="https://github.com/VidyaMuniraju/ToDoApp" target="_blank">See project on GitHub</a>
+
+      </div>
+
+      <div class="projects_item">
+
+        <h2>Movies, Movies, and Movies</h2>
+
+        <p>
+          A single-page, responsive application with routing, rich interactions, several interface views, and a polished
+          user experience. Movie enthusiasts like to be able to access information about different movies, directors,
+          and genres, whenever they want to. Having the ability to save lists of favorite movies will ensure users
+          always have access to the films they want to watch or recommend to their peers.
+        </p>
+
+        <a href="https://github.com/VidyaMuniraju/myFlix-client" target="_blank">See project on GitHub</a>
+
+      </div>
+
+      <div class="projects_item">
+
+        <h2>Meet App</h2>
+        <img src="img/MeetApp.png" alt="A screenshot of the app" class="meet-app">
+        <p>
+          An app that will allow users to search for a city and get a list of events hosted in that city.
+        </p>
+
+        <a href="https://vidyamuniraju.github.io/MEET_APP/" target="_blank">Check out the app</a>
+
+      </div>
+
+    </div>
+
+  </section>
+
 
   <footer class="page-footer">
 
@@ -63,9 +202,10 @@
 
     <div class="social-media">
 
-      <img src="img/github-logo.svg" alt="Check my Github" >
-      <img src="img/twitter-logo.svg" alt="Look up my Twitter account" >
-      <img src="img/linkedin-logo.svg" alt="Look up my LinkedIn profile" >
+      <a href="https://github.com/VidyaMuniraju" target="_blank"> <img src="img/github-logo.svg" alt="Check my Github">
+      </a>
+      <img src="img/twitter-logo.svg" alt="Look up my Twitter account">
+      <img src="img/linkedin-logo.svg" alt="Look up my LinkedIn profile">
     </div>
 
   </footer>
@@ -74,4 +214,5 @@
   </script>
 
 </body>
+
 </html>
