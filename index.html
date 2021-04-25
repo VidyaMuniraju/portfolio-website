@@ -1,77 +1,254 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vidya Muniraju Portfolio</title>
-  <link rel="icon" href="favicon.ico"/>
+  <title>Vidya Muniraju</title>
+  <link rel="icon" href="img/favicon_io/favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet"> -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.production.css">
+
 
 </head>
 
 <body>
 
   <header class="page-header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img src="img/VMLogo.png" alt="Logo of the website that consists of my initials i.e., VM" id="vm-logo"
+            class="page-header__item">
+        </a>
+        <ul class="navbar-nav  mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
 
-    <img src="img/logo-vidya-muniraju.jpg" alt="Logo of the website that consists of my initials i.e., VM" id="vm-logo" class="page-header__item">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">Bio</a>
+          </li>
 
-    <nav class="main-navigation page-header__item" >
+          <li class="nav-item">
+            <a href="#project-grid" class="nav-link">Work</a>
+          </li>
 
-      <ul role="menubar" class="nav_list">
-
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="nav_list_item nav_list_item--active">Home</a>
-        </li>
-
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="nav_list_item">Bio</a>
-        </li>
-
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="nav_list_item">Contact</a>
-        </li>
-
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="nav_list_item">Projects</a>
-        </li>
-
-      </ul>
-
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-
   </header>
 
-  <div id="info" class="profile">
+  <section id="profile">
+    <div class="container">
+      <div id="info" class="profile">
+        <!-- style="background-image: url('img/coding-bg.jpeg'); background-size: cover; height:480px; padding-top:80px;" -->
+        <!-- <img src="img/coding-bg.jpeg" style="opacity: 0.5;" class="bg-img"> -->
+        <img src="img/vidya-muniraju.jpeg" class="rounded-circle profile__portrait animated slideInDown"
+          alt="Portrait of Vidya Muniraju">
+        <h1 class="welcome_text"></h1>
+        <p class="animated slideInDown welcome_text-p">A Full Stack Developer who loves to code with
+          coffee on the side.<br>
+        </p>
+      </div>
+    </div>
 
-    <img src="img/vidya-muniraju.jpeg" class="profile__portrait" alt="Portrait of Vidya Muniraju">
+  </section>
 
-    <h1 class="welcome_text">Hello Everyone!</h1>
+  <section id="about">
+    <div id="content" class="about_text--align">
+      <h2 class="more-info"><span style="text-decoration: underline;">Get to know more about me.</span></h2>
+      <p class="text-center">
 
-    <p class="welcome_text">My name is Vidya Muniraju. I am a <span>web</span> developer from Texas.</p>
+        <!-- I am a Full Stack Developer from Texas, United States.<br> -->
+        <br>
+        I enjoy developing simple interfaces or websites that everyone<br>
+        would love to use. Trying to consistently develop new and exciting projects, <br>
+        and release high quality products for a smooth experience. And also a major <br>
+        horror, mysteries, and a thriller addict!
+      </p>
+      <a href="https://github.com/VidyaMuniraju" class="btn btn-outline-dark" target="_blank">Check out my GitHub
+        profile</a>
+    </div>
+  </section>
 
-    <a href="work.html" class="welcome_text">Check out some of my projects</a>
 
-  </div>
+
+  <section id="project-grid">
+
+    <!-- <h1>MY PROJECTS</h1> -->
+
+    <div class="projects">
+
+      <!-- <div class="projects_item">
+
+        <h2>Which Character Are You</h2>
+
+        <p>
+          Developed the frontend of this application using basic HTML5, CSS, and Bootstrap. The application lets you
+          answer a quix which determines the character from a show that you are similar to.
+        </p>
+
+        <a href="https://github.com/prafulsurve/Which-Character-Are-You" target="_blank">See project on GitHub</a>
+
+      </div>
+
+      <div class="projects_item">
+
+        <h2>Cellphone Death Match</h2>
+
+        <p>
+          This project compares the prices and specifications of two competitive phones to help you decide better.
+        </p>
+
+        <a href="https://github.com/jenniwazhere/CellphoneDeathMatch" target="_blank">See project on GitHub</a>
+
+      </div> -->
+
+      <div class="projects_item">
+
+        <h2>PokeTheMon</h2>
+        <img src="img/pokethemon.png" alt="A screenshot of the app" class="pokemon-app">
+        <p>
+          A basic application written in vanilla JavaScript and jQuery, this app displays a list of a few of the
+          Pokemons. When a
+          Pokemon is selected, a dialog window opens with more information such as height, and an image.
+        </p>
+
+        <a href="https://vidyamuniraju.github.io/PokeTheMon/" class="btn btn-outline-dark" target="_blank">Check out the
+          app</a>
+
+      </div>
+
+
+      <div class="projects_item">
+
+        <h2>Movies, Movies, and Movies</h2>
+
+        <p>
+          A single-page, responsive application with routing, rich interactions, several interface views, and a polished
+          user experience. Movie enthusiasts like to be able to access information about different movies, directors,
+          and genres, whenever they want to. Having the ability to save lists of favorite movies will ensure users
+          always have access to the films they want to watch or recommend to their peers.
+        </p>
+        <a href="https://github.com/VidyaMuniraju/Movie_FLIX" class="btn btn-outline-dark" target="_blank">See project
+          on GitHub</a>
+        <p>The server side of the application</p>
+
+
+        <a href="https://github.com/VidyaMuniraju/myFlix-client" class="btn btn-outline-dark" target="_blank">React
+          client-side</a>
+        <p>Check the Client-side of the app written in React</p>
+
+        <a href="https://github.com/VidyaMuniraju/MYFLIX-ANGULAR" class="btn btn-outline-dark" target="_blank">Angular
+          client-side</a>
+        <p>Check the Client-side of the app written in Angular</p>
+
+      </div>
+
+      <div class="projects_item">
+
+        <h2>Meet App</h2>
+        <img src="img/MeetApp.png" alt="A screenshot of the app" class="meet-app">
+        <p>
+          An app that will allow users to search for a city and get a list of events hosted in that city.
+        </p>
+
+        <a href="https://vidyamuniraju.github.io/MEET_APP/" class="btn btn-outline-dark" target="_blank">Check out the
+          app</a>
+
+      </div>
+
+      <div class="projects_item">
+
+        <h2>Binary Chat</h2>
+        <img src="img/Binary-app.png" alt="A screenshot of the app" class="meet-app">
+        <p>
+          A chat application for mobile devices built with React Native. This app uses Firebase for storing the data.
+        </p>
+
+        <a href="https://github.com/VidyaMuniraju/Binary-Chat" class="btn btn-outline-dark" target="_blank">Check out
+          the project on GitHub</a>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
 
   <footer class="page-footer">
 
-    <p>Find me on</p>
+    <section id="contact">
+      <div id="contact-details" class="contact-form">
 
-    <div class="social-media">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#contactModal">
+          Get in touch with me
+        </button>
 
-      <img src="img/github-logo.svg" alt="Check my Github" >
-      <img src="img/twitter-logo.svg" alt="Look up my Twitter account" >
-      <img src="img/linkedin-logo.svg" alt="Look up my LinkedIn profile" >
-    </div>
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact me</h5>
+                <button type="button" class="btn btn-outline-dark close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&#215;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="mailto:vidya.muniraju.m@gmail.com" method="GET">
+                  <div class="form-group">
+                    <label class="labelSubText" for="subText">Subject:</label>
+                    <input id="subText" class="form-control" name="subject" type="text" required />
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="body" placeholder="Your message" rows="5" cols="40"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button class=" btn btn-outline-dark form-control" type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
 
+
+      </div>
+
+      <a href="https://twitter.com/VidyaMuniraju" target="_blank"><img src="img/twitter-logo.svg"
+          alt="Look up my Twitter account"></a>
+      <a href="https://www.linkedin.com/in/vidya-muniraju-m/" target="_blank"><img src="img/linkedin-logo.svg"
+          alt="Look up my LinkedIn profile"></a>
+
+      </div>
+    </section>
   </footer>
 
-  <script src="js/tota11y.min.js">
-  </script>
+  <script src="js/tota11y.min.js"></script>
 
 </body>
+
 </html>

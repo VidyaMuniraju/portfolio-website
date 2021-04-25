@@ -1,0 +1,23 @@
+{
+  "name": "1.8_css_preprocessors_and_css_variables",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stylelint.config.js",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VidyaMuniraju/portfolio-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VidyaMuniraju/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/VidyaMuniraju/portfolio-website#readme"
+}
