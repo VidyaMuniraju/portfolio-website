@@ -36,23 +36,31 @@
           <img src="img/VMLogo.png" alt="Logo of the website that consists of my initials i.e., VM" id="vm-logo"
             class="page-header__item">
         </a>
-        <ul class="navbar-nav  mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
-          </li>
 
-          <li class="nav-item">
-            <a href="#about" class="nav-link">Bio</a>
-          </li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars fa-1x"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
 
-          <li class="nav-item">
-            <a href="#project-grid" class="nav-link">Work</a>
-          </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">Bio</a>
+            </li>
 
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a href="#project-grid" class="nav-link">Work</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </nav>
   </header>
@@ -65,8 +73,9 @@
         <img src="img/vidya-muniraju.jpeg" class="rounded-circle profile__portrait animated slideInDown"
           alt="Portrait of Vidya Muniraju">
         <h1 class="welcome_text"></h1>
-        <p class="animated slideInDown welcome_text-p">A Full Stack Developer who loves to code with
-          coffee on the side.<br>
+        <p class="animated slideInDown welcome_text-p">
+          A Full Stack Developer who loves to code with
+          coffee on the side!!
         </p>
       </div>
     </div>
@@ -75,7 +84,7 @@
 
   <section id="about">
     <div id="content" class="about_text--align">
-      <h2 class="more-info"><span style="text-decoration: underline;">Get to know more about me.</span></h2>
+      <h2 class="more-info">Get to know more about me</h2>
       <p class="text-center">
 
         <!-- I am a Full Stack Developer from Texas, United States.<br> -->
@@ -92,9 +101,9 @@
 
 
 
-  <section id="project-grid">
+  <section id="project-grid" class="container-fluid">
 
-    <!-- <h1>MY PROJECTS</h1> -->
+    <h2 class="work-text">SOME OF MY RECENT WORK</h2>
 
     <div class="projects">
 
@@ -189,7 +198,7 @@
 
   <footer class="page-footer">
 
-    <section id="contact">
+    <section id="contact" class="container-fluid">
       <div id="contact-details" class="contact-form">
 
         <!-- Button trigger modal -->

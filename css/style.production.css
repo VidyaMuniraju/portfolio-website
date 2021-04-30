@@ -42,6 +42,19 @@ color: #05676e;
   margin-left: 30px;
 }
 
+.collapse {
+  float: right;
+  width: 300px;
+}
+
+.navbar-toggler {
+  position: absolute;
+  right: 0px;
+  width: 60px;
+}
+
+
+
 ul {
   list-style-type: none;
   overflow: hidden;
@@ -95,6 +108,14 @@ li a:active {
   /* position: relative; */
 }
 
+/* .profile {
+  width: 100%;
+  text-align: center;
+  padding-top: 15%;
+  position: relative;
+} */
+
+
 .welcome_text {
   text-align: left;
   margin: 100px 50px 50px 150px;
@@ -102,8 +123,9 @@ li a:active {
 }
 
 .welcome_text-p {
-  text-align: left;
-  margin: 25px 50px 50px 150px;
+  float: left;
+  left: 0px;
+  position: relative;
 }
 
 .animate__animated.animate__slideInDown {
@@ -122,13 +144,16 @@ li a:active {
 #contact-details {
   font-size: var(--font-size);
   margin-top: 100px;
+  width: 100%;
 }
 
 
 #content {
   font-size: var(--font-size);
   margin-top: 100px;
+  width: 100%;
 }
+
 
 .bg-img {
   width: 100%;
@@ -209,7 +234,7 @@ button:focus,
 }
 
 #profile {
-  margin-bottom: 100px;
+  margin-bottom: 400px;
   padding: 10px;
 }
 
@@ -224,8 +249,13 @@ button:focus,
 }
 
 #about {
-  margin: 100px 25px 25px 25px;
+  margin: 100px 25px 200px 25px;
   padding: 10px;
+}
+
+.work-text {
+  text-align: center;
+  width: 100%;
 }
 
 .meet-app {
@@ -304,12 +334,28 @@ button:focus,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+
+  .profile__portrait {
+    float: right;
+    width: 250px;
+    margin: 0px 40px 40px 40px;
+    position: relative;
+    right: 0px;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .projects {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .profile__portrait {
+    float: right;
+    width: 250px;
+    margin: 0px 40px 40px 40px;
+    position: relative;
+    right: 0px;
   }
 }
 
@@ -323,8 +369,26 @@ button:focus,
     grid-row: auto / auto;
   } */
 
-  h1 {
-    font-size: var(--font-size);
-    margin-top: 20px;
+  .profile__portrait {
+    float: right;
+    width: 250px;
+    margin: 0px 40px 40px 40px;
+    position: relative;
+    right: 0px;
   }
+}
+
+@media all and (width: 768px) and (height: 1024px) {
+  .profile__portrait {
+    float: right;
+    width: 250px;
+    margin: 0px 40px 40px 40px;
+    position: relative;
+    right: 0px;
+  }
+}
+
+h1 {
+  font-size: var(--font-size);
+  margin-top: 20px;
 }
