@@ -29,22 +29,10 @@ div a {
   color: var(--link-color);
 }
 
-/* a:visited {
-color: #05676e;
-} */
-
-.nav_list {
-  list-style-type: none;
-}
-
-.nav_list li {
-  display: inline-block;
-  margin-left: 30px;
-}
 
 .collapse {
   float: right;
-  width: 300px;
+  width: 275px;
 }
 
 .navbar-toggler {
@@ -54,16 +42,12 @@ color: #05676e;
 }
 
 
-
 ul {
   list-style-type: none;
   overflow: hidden;
   align-items: flex-end;
 }
 
-/* li a:visited {
-color: #506068 ;
-} */
 
 li a:hover,
 a:focus {
@@ -90,6 +74,11 @@ li a:active {
   right: 0px;
 }
 
+.coverImg {
+  width: 100%;
+  object-fit: cover;
+}
+
 .page-footer {
   clear: both;
   display: -webkit-box;
@@ -100,13 +89,14 @@ li a:active {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
+  background-color: #212529;
 }
 
-.profile {
+/* .profile {
   max-width: 700px;
-  /* margin: 0 auto; */
-  /* position: relative; */
-}
+  margin: 0 auto;
+  position: relative;
+} */
 
 /* .profile {
   width: 100%;
@@ -138,7 +128,7 @@ li a:active {
   height: 53px;
   margin-right: 50px;
   margin-top: 10px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 #contact-details {
@@ -176,6 +166,7 @@ li a:active {
 
 .more-info {
   text-align: center;
+  font-size: xx-large;
 }
 
 .btn {
@@ -234,7 +225,7 @@ button:focus,
 }
 
 #profile {
-  margin-bottom: 400px;
+  margin-bottom: 50px;
   padding: 10px;
 }
 
@@ -249,13 +240,19 @@ button:focus,
 }
 
 #about {
-  margin: 100px 25px 200px 25px;
+  margin: 50px 25px 200px 25px;
   padding: 10px;
+}
+
+.text-center {
+  text-align: center;
+  text-justify: inter-word;
 }
 
 .work-text {
   text-align: center;
   width: 100%;
+  font-size: xx-large;
 }
 
 .meet-app {
@@ -270,10 +267,9 @@ button:focus,
   float: left;
 }
 
-/* #contactModal {
-  width: 75%;
-  align-self: center;
-} */
+.projectTitle {
+  font-size: x-large;
+}
 
 .form-group {
   margin-right: 22px;
@@ -287,6 +283,7 @@ button:focus,
 #contactModalLabel {
   text-align: center;
   width: 100%;
+  font-size: x-large;
 }
 
 /* start grid fallback */
@@ -320,13 +317,6 @@ button:focus,
     padding: 20px;
   }
 
-  /* .projects_item:last-child {
-    -ms-grid-column: 1;
-    grid-column: 1 / 1;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
-  } */
 }
 
 @media all and (max-width: 500px) {
@@ -364,10 +354,6 @@ button:focus,
     grid-gap: 10px;
   }
 
-  /* .projects_item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  } */
 
   .profile__portrait {
     float: right;

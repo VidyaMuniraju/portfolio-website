@@ -37,12 +37,17 @@
             class="page-header__item">
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fas fa-bars fa-1x"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <ul id="navItems" class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <!-- <li id="hamClose" class="nav-item" data-state="closed">
+              <a href="#" class="nav-link">&times;</a>
+            </li> -->
+
             <li class="nav-item">
               <a href="#" class="nav-link">Home</a>
             </li>
@@ -58,6 +63,7 @@
             <li class="nav-item">
               <a href="#contact" class="nav-link">Contact</a>
             </li>
+
           </ul>
         </div>
 
@@ -66,17 +72,9 @@
   </header>
 
   <section id="profile">
-    <div class="container">
+    <div class="container-fluid">
       <div id="info" class="profile">
-        <!-- style="background-image: url('img/coding-bg.jpeg'); background-size: cover; height:480px; padding-top:80px;" -->
-        <!-- <img src="img/coding-bg.jpeg" style="opacity: 0.5;" class="bg-img"> -->
-        <img src="img/vidya-muniraju.jpeg" class="rounded-circle profile__portrait animated slideInDown"
-          alt="Portrait of Vidya Muniraju">
-        <h1 class="welcome_text"></h1>
-        <p class="animated slideInDown welcome_text-p">
-          A Full Stack Developer who loves to code with
-          coffee on the side!!
-        </p>
+        <img src="img/Portfolio-HeroImage.png" class="coverImg animated slideInDown" alt="Introductory image">
       </div>
     </div>
 
@@ -84,15 +82,16 @@
 
   <section id="about">
     <div id="content" class="about_text--align">
-      <h2 class="more-info">Get to know more about me</h2>
+      <p class="more-info">Get to know more about me</p>
       <p class="text-center">
 
         <!-- I am a Full Stack Developer from Texas, United States.<br> -->
-        <br>
-        I enjoy developing simple interfaces or websites that everyone<br>
-        would love to use. Trying to consistently develop new and exciting projects, <br>
-        and release high quality products for a smooth experience. And also a major <br>
-        horror, mysteries, and a thriller addict!
+        <br />
+
+        I'm a full stack developer with a background in Computer Science.
+        I believe in sustainable code development and enjoy coding apps which make a difference
+        in the society. Taking that as my inspiration, I thrive in difficult situations and set my eye on the goal.
+        Currently working on a video communication app using the MEVN stack.
       </p>
       <a href="https://github.com/VidyaMuniraju" class="btn btn-outline-dark" target="_blank">Check out my GitHub
         profile</a>
@@ -101,31 +100,15 @@
 
 
 
-  <section id="project-grid" class="container-fluid">
+  <section id="project-grid">
 
-    <h2 class="work-text">SOME OF MY RECENT WORK</h2>
+    <p class="work-text">SOME OF MY RECENT WORK</p>
 
-    <div class="projects">
-
-      <!-- <div class="projects_item">
-        <h2>Which Character Are You</h2>
-        <p>
-          Developed the frontend of this application using basic HTML5, CSS, and Bootstrap. The application lets you
-          answer a quix which determines the character from a show that you are similar to.
-        </p>
-        <a href="https://github.com/prafulsurve/Which-Character-Are-You" target="_blank">See project on GitHub</a>
-      </div>
-      <div class="projects_item">
-        <h2>Cellphone Death Match</h2>
-        <p>
-          This project compares the prices and specifications of two competitive phones to help you decide better.
-        </p>
-        <a href="https://github.com/jenniwazhere/CellphoneDeathMatch" target="_blank">See project on GitHub</a>
-      </div> -->
+    <div class="projects container-fluid">
 
       <div class="projects_item">
 
-        <h2>PokeTheMon</h2>
+        <p class="projectTitle">POKETHEMON</p>
         <img src="img/pokethemon.png" alt="A screenshot of the app" class="pokemon-app">
         <p>
           A basic application written in vanilla JavaScript and jQuery, this app displays a list of a few of the
@@ -141,7 +124,7 @@
 
       <div class="projects_item">
 
-        <h2>Movies, Movies, and Movies</h2>
+        <p class="projectTitle">CINEFORCE</p>
 
         <p>
           A single-page, responsive application with routing, rich interactions, several interface views, and a polished
@@ -166,10 +149,13 @@
 
       <div class="projects_item">
 
-        <h2>Meet App</h2>
+        <p class="projectTitle">MEET APP</p>
         <img src="img/MeetApp.png" alt="A screenshot of the app" class="meet-app">
         <p>
-          An app that will allow users to search for a city and get a list of events hosted in that city.
+          An app that will allow users to search for a city and get a list of events hosted in that city. This
+          is a serverless, PWA application built with React. It uses the OAuth2 protocol for authentication and
+          AWS Lambda as its authorization server. Also, this app makes use of a service worker to allow the app
+          to display previously stored data when the device is offline.
         </p>
 
         <a href="https://vidyamuniraju.github.io/MEET_APP/" class="btn btn-outline-dark" target="_blank">Check out the
@@ -179,30 +165,27 @@
 
       <div class="projects_item">
 
-        <h2>Binary Chat</h2>
+        <p class="projectTitle">BINARY CHAT</p>
         <img src="img/Binary-app.png" alt="A screenshot of the app" class="meet-app">
         <p>
-          A chat application for mobile devices built with React Native. This app uses Firebase for storing the data.
+          A chat application for mobile devices built with React Native. It allows a user to send/receive text messages
+          and images, and share their current location as well. This app uses Firebase to store the data in JSON
+          format.
         </p>
 
         <a href="https://github.com/VidyaMuniraju/Binary-Chat" class="btn btn-outline-dark" target="_blank">Check out
           the project on GitHub</a>
 
       </div>
-
-
     </div>
-
   </section>
 
-
   <footer class="page-footer">
-
     <section id="contact" class="container-fluid">
       <div id="contact-details" class="contact-form">
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#contactModal">
+        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#contactModal">
           Get in touch with me
         </button>
 
@@ -212,7 +195,7 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="contactModalLabel">Contact me</h5>
+                <p class="modal-title" id="contactModalLabel">Contact me</p>
                 <button type="button" class="btn btn-outline-dark close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&#215;</span>
                 </button>
@@ -248,7 +231,7 @@
   </footer>
 
   <script src="js/tota11y.min.js"></script>
-
+  <script src="js/index.js"></script>
 </body>
 
 </html>
